@@ -6,4 +6,6 @@
  I will always review them and fix soon as possible.
 ## I've got an idea! 
  That's cool!
- Email or text me your idea, you can see discord and email on my profile.
+ Email, send message on discord or make an issue. Email and my discord are in my profile.
+ **Ideas that contain game rule change are not gonna be added!**
+ 
