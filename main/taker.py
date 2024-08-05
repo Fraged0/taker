@@ -1,12 +1,11 @@
-import colorama
+# required module
 import random
 
-colorama.init()
-colorama.just_fix_windows_console()
-
-colors = {0: colorama.Back.WHITE, 1: colorama.Back.RED}
+# variables
+colors = {0: '\033[0;37;47m', 1: '\033[0;37;41m', 2: '\033[0m'}
 board = [0 ,0, 0, 0, 0, 0, 0, 0, 0, 0]
 
+# render the board
 def render():
     global board
     render = ""
@@ -14,8 +13,9 @@ def render():
         render += colors[clr] + "  "
     return render
 
+# run the game
 while True:
-    print(render() + colorama.Back.RESET)
+    print(render() + colors[2])
     inp = int(input("> ")) - 1
     board[inp] = 1
     for i in range(2):
